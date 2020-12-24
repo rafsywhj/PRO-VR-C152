@@ -14,7 +14,6 @@ AFRAME.registerComponent("car-model", {
   update: function() {
     window.addEventListener("click", e => {
       this.data.clickCounter = this.data.clickCounter + 1;
-      console.log(this.data.clickCounter);
       if (this.data.clickCounter === 1) {
         const rotation = { x: 0, y: 20, z: 0 };
         this.el.setAttribute("rotation", rotation);
